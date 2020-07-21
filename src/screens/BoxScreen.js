@@ -15,19 +15,18 @@ const styles = StyleSheet.create({
     textOneStyle: {
         borderColor: `red`,
         borderWidth: 3,
-        flex: 4,
     },
     textTwoStyle: {
+        alignSelf: `stretch`,
         borderColor: `red`,
         borderWidth: 3,
-        flex: 4,
     },
     textThreeStyle: {
         borderColor: `red`,
         borderWidth: 3,
-        flex: 2,
     },
     viewStyle: {
+        alignItems: `center`,
         borderColor: `black`,
         borderWidth: 3,
         height: 200,
