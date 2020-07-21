@@ -17,9 +17,10 @@ const styles = StyleSheet.create({
         borderWidth: 3,
     },
     viewStyle: {
-        alignItems: `flex-end`,
         borderColor: `black`,
         borderWidth: 3,
+        flexDirection: `row`,
+        height: 200,
     },
 })
 
