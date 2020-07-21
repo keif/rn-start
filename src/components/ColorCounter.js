@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { FlatList, StyleSheet, Text, View, Button } from "react-native";
+import React from "react";
+import { StyleSheet, Text, View, Button } from "react-native";
 
 const ColorCounter = ({ color, onDecrease, onIncrease }) => {
     return (
@@ -18,21 +18,6 @@ const ColorCounter = ({ color, onDecrease, onIncrease }) => {
 
 };
 
-const randomRgb = () => {
-    const red = Math.floor(Math.random() * 256)
-    const green = Math.floor(Math.random() * 256)
-    const blue = Math.floor(Math.random() * 256)
-
-    return `rgb(${red}, ${green}, ${blue})`
-}
-
-const styles = StyleSheet.create({
-    header: {
-        fontSize: 30
-    },
-    text: {
-        fontSize: 20
-    }
-});
+const styles = StyleSheet.create({});
 
 export default ColorCounter;
