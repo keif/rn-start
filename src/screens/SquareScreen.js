@@ -22,26 +22,27 @@ const reducer = (state, action) => {
 
 const SquareScreen = (props) => {
     const [state, dispatch] = useReducer(reducer, COLOR_OBJECT)
+    const { red, green, blue } = state
 
     return (
         <View>
             <ColorCounter
                 color="Red"
-                onDecrease={() => {}}
-                onIncrease={() => {}}
+                onDecrease={() => {dispatch({ colorToChange: `red`, amount: -1 * COLOR_INCREMENT })}}
+                onIncrease={() => {dispatch({ colorToChange: `red`, amount: COLOR_INCREMENT })}}
             />
             <ColorCounter
                 color="Green"
-                onDecrease={() => {}}
-                onIncrease={() => {}}
+                onDecrease={() => {dispatch({ colorToChange: `green`, amount: -1 * COLOR_INCREMENT })}}
+                onIncrease={() => {dispatch({ colorToChange: `green`, amount: COLOR_INCREMENT })}}
             />
             <ColorCounter
                 color="Blue"
-                onDecrease={() => {}}
-                onIncrease={() => {}}
+                onDecrease={() => {dispatch({ colorToChange: `blue`, amount: -1 * COLOR_INCREMENT })}}
+                onIncrease={() => {dispatch({ colorToChange: `blue`, amount: COLOR_INCREMENT })}}
             />
-            <View style={{ backgroundColor: `rgb(${state.red}, ${state.green}, ${state.blue})`, height: 150, width: 150}} />
-            <Text>rgb({state.red}, {state.green}, {state.blue})</Text>
+            <View style={{ backgroundColor: `rgb(${red}, ${green}, ${blue})`, height: 150, width: 150}} />
+            <Text>rgb({red}, {green}, {blue})</Text>
         </View>
     );
 
