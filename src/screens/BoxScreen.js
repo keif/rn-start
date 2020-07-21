@@ -17,16 +17,16 @@ const styles = StyleSheet.create({
         borderWidth: 3,
     },
     textTwoStyle: {
-        alignSelf: `stretch`,
         borderColor: `red`,
         borderWidth: 3,
+        position: `absolute`,
     },
     textThreeStyle: {
         borderColor: `red`,
         borderWidth: 3,
     },
     viewStyle: {
-        alignItems: `center`,
+        alignItems: `flex-end`,
         borderColor: `black`,
         borderWidth: 3,
         height: 200,
