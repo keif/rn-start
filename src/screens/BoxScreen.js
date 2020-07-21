@@ -19,14 +19,14 @@ const styles = StyleSheet.create({
     textTwoStyle: {
         borderColor: `red`,
         borderWidth: 3,
-        position: `absolute`,
+        fontSize: 18,
+        left: 10,
     },
     textThreeStyle: {
         borderColor: `red`,
         borderWidth: 3,
     },
     viewStyle: {
-        alignItems: `flex-end`,
         borderColor: `black`,
         borderWidth: 3,
         height: 200,
