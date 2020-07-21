@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
         borderWidth: 3,
         flexDirection: `row`,
         height: 200,
+        justifyContent: `flex-start`,
     },
 })
 
