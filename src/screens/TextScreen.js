@@ -7,7 +7,9 @@ const TextScreen = () => {
             <TextInput
                 autoCapitalize="none"
                 autoCorrect={false}
+                onChange={(event) => console.log(event)}
                 style={styles.input}
+                value="hi there"
             />
         </View>
     )
